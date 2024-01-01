@@ -120,6 +120,13 @@ class PemesananOnline(PemesananMakananMinuman):
 
 2.2 Pemanggilan aplikasi
 Untuk menjalankan serta menampilkan antarmuka aplikasi, maka perlu dituliskan blok kode sebagai berikut.
+
+if __name__ == "__main__":
+    # Membuat instance dari kelas PemesananOnline
+    root = tk.Tk()
+    app = PemesananOnline(root)
+    root.mainloop()
+
   
 Kode ini berfungsi untuk membuat instance dari kelas PemesananOnline, membuat objek root untuk menampilkan GUI, dan memanggil metode mainloop() untuk menjalankan aplikasi secara terus-menerus hingga ditutup.
 
